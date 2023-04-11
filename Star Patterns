@@ -1,0 +1,293 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    int n=4;
+	    int m=1;
+	    char ch='A';
+	    int a=5;
+	    int b=5;
+	    
+	    System.out.println();
+	    System.out.println("________________________________________________NORMAL pattern________________________________________________");
+	    
+	    
+	    System.out.println(" pattern 1");
+		System.out.println();
+		
+		for(int i=1;i<=n;i++){
+		    for(int j=1;j<=i;j++){
+		        System.out.print("*");
+		    }
+		    System.out.println();
+		}
+    
+		System.out.println();
+		System.out.println(" pattern 2");
+		System.out.println();
+		
+		for(int i=1;i<=n;i++){
+		    for(int j=1;j<=n-i+1;j++){
+		        System.out.print("*");
+		    }
+		    System.out.println();
+		}
+		
+		System.out.println();
+		System.out.println(" pattern 3");
+		System.out.println();
+		
+		for(int i=1;i<=n;i++){
+		    for(int j=1;j<=i;j++){
+		        System.out.print(j);
+		       
+		    }
+		    System.out.println();
+		}
+		
+		System.out.println();
+		System.out.println(" pattern 4");
+		System.out.println();
+		
+		for(int i=1;i<=n;i++){
+		    for(int j=1;j<=i;j++){
+		        System.out.print(m);
+		        m++;
+		    }
+		    System.out.println();
+		}
+		
+		System.out.println();
+		System.out.println(" pattern 5");
+		System.out.println();
+		
+		for(int i=1;i<=n;i++){
+		    for(int j=1;j<=i;j++){
+		        System.out.print(ch);
+		        ch++;
+		    }
+		    System.out.println();
+		}
+		System.out.println();
+		System.out.println("________________________________________________ADVANCE pattern________________________________________________");
+			
+		System.out.println();
+		System.out.println(" ADVANCE pattern 1");
+		System.out.println();
+		
+		for(int i=1;i<=a;i++){
+		    for(int j=1;j<=b;j++){
+		        if(i==1 || i==a || j==1 || j==b){
+		            System.out.print("*");
+		        }else{
+		            System.out.print(" ");
+		        }
+		        
+		    }
+		    System.out.println();
+		}
+			
+		System.out.println();
+		System.out.println(" ADVANCE pattern 2");
+		System.out.println();
+		
+		for(int i=1;i<=n;i++){
+		    for(int j=1;j<=n-i;j++){
+		        System.out.print(" ");
+		    }
+		    for(int j=1;j<=i;j++){
+		        System.out.print("*");
+		    }
+		    System.out.println();
+		}
+		
+		System.out.println();
+		System.out.println(" ADVANCE pattern 3");
+		System.out.println();
+		
+		for(int i=1;i<=n;i++){
+		    for(int j=1;j<=n-i+1;j++){
+		        System.out.print(j);
+		    }
+		    System.out.println();
+		}
+		
+		System.out.println();
+		System.out.println(" ADVANCE pattern 4");
+		System.out.println();
+		
+		for(int i=1;i<=n;i++){
+		    for(int j=1;j<=i;j++){
+		        if((i+j)%2==0){
+		            System.out.print("1");
+		        }else{
+		            System.out.print("0");
+		        }
+		    }
+		    System.out.println();
+		}
+		
+		System.out.println();
+		System.out.println(" ADVANCE pattern 5");
+		System.out.println();
+		
+		for(int i=1; i<=n; i++){
+		    for(int j=1;j<=i;j++){
+		        System.out.print("*");
+		    }
+		    for(int j=1;j<=2*(n-i);j++){
+		        System.out.print(" ");
+		    }
+		    for(int j=1;j<=i;j++){
+		        System.out.print("*");
+		    }
+		    System.out.println();
+		}
+		for(int i=n;i>=1;i--){
+		    
+		    for(int j=1;j<=i;j++){
+		        System.out.print("*");
+		    }
+		    for(int j=1;j<=2*(n-i);j++){
+		        System.out.print(" ");
+		    }
+		    for(int j=1;j<=i;j++){
+		        System.out.print("*");
+		    }
+		    System.out.println();
+		}
+		
+		System.out.println();
+		System.out.println(" ADVANCE pattern 6");
+		System.out.println();
+		
+		for(int i=1;i<=n;i++){
+		    for(int j=1;j<=(n-i);j++){
+		        System.out.print(" ");
+		    }
+		    for(int j=1;j<=n;j++){
+		        System.out.print("*");
+		    }
+		    System.out.println();
+		}
+		
+		System.out.println();
+		System.out.println(" ADVANCE pattern 7");
+		System.out.println();
+		
+		for(int i=1;i<=n;i++){
+		    
+		    for(int j=1;j<=(n-i);j++){
+		        System.out.print(" ");
+		    }
+		    for(int j=1;j<=n;j++){
+		        if(i==1||i==n||j==1||j==n){
+		             System.out.print("*");
+		        }else{
+		            System.out.print(" ");
+		        }
+		   }
+		    System.out.println();
+		}
+		
+		System.out.println();
+		System.out.println(" ADVANCE pattern 8");
+		System.out.println();
+		
+		for(int i=1;i<=n;i++){
+		    for(int j=1;j<=(n-i);j++){
+		        System.out.print(" ");
+		    }
+		    for(int j=1;j<=(2*i)-1;j++){
+		        System.out.print("*");
+		    }
+		    System.out.println();
+		}
+			for(int i=n;i>=1;i--){
+		    for(int j=1;j<=(n-i);j++){
+		        System.out.print(" ");
+		    }
+		    for(int j=1;j<=(2*i)-1;j++){
+		        System.out.print("*");
+		    }
+		    System.out.println();
+		}
+		
+		System.out.println();
+		System.out.println(" ADVANCE pattern 9");
+		System.out.println();
+		
+		for(int i=1;i<=n;i++){
+		    for(int j=1;j<=n-i;j++){
+		        System.out.print(" ");
+		    }
+		    for(int j=1;j<=i;j++){
+		        System.out.print(i+" ");
+		    }
+		    System.out.println();
+		}
+		for(int i=n;i>=1;i--){
+		    for(int j=1;j<=n-i;j++){
+		        System.out.print(" ");
+		    }
+		    for(int j=1;j<=i;j++){
+		        System.out.print(i+" ");
+		        
+		    }
+		    System.out.println();
+		}
+			
+		System.out.println();
+		System.out.println(" ADVANCE pattern 10");
+		System.out.println();
+		
+		for(int i=1;i<=n;i++){
+		    for(int j=1;j<=n-i;j++){
+		        System.out.print(" ");
+		    }
+		    for(int j=i;j>=1;j--){
+		        System.out.print(j);
+		    }
+		    for(int j=2;j<=i;j++){
+		        System.out.print(j);
+		    }
+		    System.out.println();
+		}
+		for(int i=n;i>=1;i--){
+		    for(int j=1;j<=n-i;j++){
+		        System.out.print(" ");
+		    }
+		    for(int j=i;j>=1;j--){
+		        System.out.print(j);
+		    }
+		    for(int j=2;j<=i;j++){
+		        System.out.print(j);
+		    }
+		    System.out.println();
+		}
+			
+		System.out.println();
+		System.out.println(" ADVANCE pattern 11");
+		System.out.println();
+		
+		for(int i=1;i<=n;i++){
+		    for(int j=1;j<=(n-i);j++){
+		        System.out.print(" ");
+		    }
+		    for(int j=1;j<=(2*i)-1;j++){
+		        System.out.print("*");
+		    }
+		    System.out.println();
+		}
+		for(int i=n-1;i>=1;i--){
+		    for(int j=1;j<=(n-i);j++){
+		        System.out.print(" ");
+		    }
+		    for(int j=1;j<=(2*i)-1;j++){
+		        System.out.print("*");
+		    }
+		    System.out.println();
+		}
+	}
+}
